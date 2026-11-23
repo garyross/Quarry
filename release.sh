@@ -10,7 +10,7 @@
 #   2. Notary credentials in your keychain (app-specific password from appleid.apple.com):
 #        xcrun notarytool store-credentials quarry-notary \
 #          --apple-id <your Apple ID> --team-id <TEAMID> --password <app-specific password>
-#   3. For --publish: gh auth login, and a GitHub remote for this repo.
+#   3. For --publish: gh auth login, and a GitHub remote for this repo (any name).
 #
 # The version comes from CFBundleShortVersionString in Info.plist.in.
 set -euo pipefail
@@ -29,7 +29,7 @@ fi
 
 if [[ " $* " == *" --publish "* ]]; then
   command -v gh >/dev/null || { echo "--publish needs the gh CLI"; exit 1; }
-  git -C "$here" remote get-url origin >/dev/null 2>&1 || { echo "--publish needs a GitHub remote named origin"; exit 1; }
+  [[ -n "$(git -C "$here" remote)" ]] || { echo "--publish needs a GitHub remote"; exit 1; }
   if gh release view "v$version" >/dev/null 2>&1; then
     echo "release v$version already exists; bump CFBundleShortVersionString in Info.plist.in"; exit 1
   fi

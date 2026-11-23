@@ -6,6 +6,7 @@
 
 <p align="center">
   A native macOS client for MySQL, MariaDB and SQLite, written in SwiftUI.<br>
+  Connect with Claude, ChatGPT, Gemini, etc.<br> 
   <a href="https://github.com/garyross">Gary Ross</a><br>
 <a href="https://www.instagram.com/macgroover/">Instagram</a> Motorbikes, Cats, and Japan<br>
 <a href="https://www.linkedin.com/in/gary-ross/">LinkedIn</a>

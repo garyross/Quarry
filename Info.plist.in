@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleIdentifier</key><string>app.quarry.mac</string>
+<key>CFBundleName</key><string>Quarry</string>
+<key>CFBundleDisplayName</key><string>Quarry</string>
+<key>CFBundleExecutable</key><string>Quarry</string>
+<key>CFBundleIconFile</key><string>AppIcon</string>
+<key>CFBundleIconName</key><string>AppIcon</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleShortVersionString</key><string>0.1</string>
+<key>CFBundleVersion</key><string>__BUILD__</string>
+<key>LSMinimumSystemVersion</key><string>26.0</string>
+<key>LSApplicationCategoryType</key><string>public.app-category.productivity</string>
+<key>NSHighResolutionCapable</key><true/>
+<key>NSPrincipalClass</key><string>NSApplication</string>
+<key>CFBundleDocumentTypes</key><array>
+  <dict>
+    <key>CFBundleTypeName</key><string>SQLite Database</string>
+    <key>CFBundleTypeRole</key><string>Editor</string>
+    <key>LSHandlerRank</key><string>Alternate</string>
+    <key>CFBundleTypeExtensions</key><array><string>sqlite</string><string>sqlite3</string><string>db</string><string>db3</string></array>
+  </dict>
+  <dict>
+    <key>CFBundleTypeName</key><string>Quarry Connection</string>
+    <key>CFBundleTypeRole</key><string>Editor</string>
+    <key>LSHandlerRank</key><string>Alternate</string>
+    <key>CFBundleTypeExtensions</key><array><string>spf</string><string>quarrysession</string></array>
+  </dict>
+</array>
+<key>UTExportedTypeDeclarations</key><array><dict>
+  <key>UTTypeIdentifier</key><string>app.quarry.filter-line</string>
+  <key>UTTypeDescription</key><string>Quarry filter rule</string>
+  <key>UTTypeConformsTo</key><array><string>public.data</string></array>
+</dict></array>
+</dict></plist>

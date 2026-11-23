@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" width="1254" height="1254">
+  <defs>
+    <clipPath id="tile">
+      <rect x="55" y="60" width="1140" height="1135" rx="270" ry="270"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#tile)">
+    <!-- background -->
+    <rect x="0" y="0" width="1254" height="1254" fill="#F36C12"/>
+
+    <!-- whole crack base -->
+    <path fill="#A82B10" d="M0,545 L355,488 L380,445 L490,412 L485,378 L770,358 L840,315 L1254,300 L930,390 L975,437 L1254,480 L735,605 L845,660 L1100,725 L940,790 L920,840 L655,898 L515,935 L455,997 L330,1015 L0,1075 Z"/>
+
+    <!-- upper-left wall -->
+    <path fill="#B33110" d="M0,545 L355,488 L355,632 L0,705 Z"/>
+    <path fill="#CB3E14" d="M355,488 L380,445 L518,410 L560,590 L355,632 Z"/>
+
+    <!-- back wall -->
+    <path fill="#A82C10" d="M485,378 L770,358 L760,515 L555,562 L518,410 Z"/>
+    <path fill="#C93E15" d="M770,358 L840,315 L800,505 L760,515 Z"/>
+
+    <!-- deep channel -->
+    <path fill="#7C1D0A" d="M555,562 L800,505 L840,315 L1254,300 L930,390 L880,565 L735,605 L655,898 L515,935 L455,997 L330,1015 L390,850 L625,790 L625,628 Z"/>
+    <path fill="#9A2510" d="M840,315 L1254,300 L930,390 L905,470 Z"/>
+
+    <!-- middle ledge -->
+    <path fill="#E2561B" d="M0,712 L560,590 L625,628 L270,712 L190,828 L0,885 Z"/>
+
+    <!-- lower-left walls -->
+    <path fill="#A82B10" d="M0,885 L190,828 L270,712 L625,628 L625,790 L390,850 L330,1015 L0,1075 Z"/>
+
+    <!-- right walls -->
+    <path fill="#CB3E14" d="M735,605 L845,660 L815,862 L655,898 Z"/>
+    <path fill="#A82B10" d="M845,660 L1100,725 L940,790 L920,840 L815,862 Z"/>
+    <path fill="#CB3E14" d="M930,390 L975,437 L955,545 L880,565 Z"/>
+    <path fill="#A02810" d="M975,437 L1254,480 L955,545 Z"/>
+  </g>
+</svg>

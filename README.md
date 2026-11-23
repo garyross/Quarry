@@ -4,12 +4,11 @@
 
 <h1 align="center">Quarry Version 0.1</h1>
 
-<p align="center">
+<p>
   A native macOS client for MySQL, MariaDB and SQLite, written in SwiftUI.<br>
-  Connect with Claude, ChatGPT, Gemini, etc.<br> 
-  <a href="https://github.com/garyross">Gary Ross</a><br>
-<a href="https://www.instagram.com/macgroover/">Instagram</a> Motorbikes, Cats, and Japan<br>
-<a href="https://www.linkedin.com/in/gary-ross/">LinkedIn</a>
+  Connect via MCP with Claude, ChatGPT, Gemini, etc.<br> 
+  Quarry would like to acknowledge <a href="https://github.com/sequelpro/sequelpro">SequelPro</a><br>
+  Contact: <a href="https://www.linkedin.com/in/gary-ross/">Gary Ross</a>
 </p>
 
 ![Browsing a table's content](docs/images/content-light.png)

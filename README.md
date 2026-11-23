@@ -13,6 +13,13 @@
 
 ![Browsing a table's content](docs/images/content-light.png)
 
+## Download
+
+**[Download the latest Quarry (.dmg)](https://github.com/garyross/Quarry/releases/latest)**
+
+Open the DMG and drag Quarry to Applications. Quarry is signed and notarized by Apple, so it opens without warnings.
+Needs macOS 26 or later on an Apple Silicon Mac. Earlier versions are on the [Releases](https://github.com/garyross/Quarry/releases) page.
+
 ## Features
 
 **Connect**
@@ -116,7 +123,7 @@ Agents can also read the front window's tables as resources (`quarry://{connecti
 
 ## Requirements
 
-- macOS 26 or later
+- macOS 26 or later, on an Apple Silicon Mac
 - Swift 6.2 (Xcode 26 or the matching command line tools) to build
 
 ## Build
@@ -130,6 +137,16 @@ Quarry is a Swift package; there is no Xcode project.
 
 The build signs with your Apple Development certificate if you have one, and ad hoc otherwise.
 Set `SIGN_IDENTITY` to choose a certificate.
+
+### Release
+
+```sh
+./release.sh            # signed, notarized dist/Quarry-<version>.dmg
+./release.sh --publish  # the same, then a GitHub release v<version> with the DMG
+```
+
+The version comes from `CFBundleShortVersionString` in `Info.plist.in`; bump it before each release.
+Needs a Developer ID Application certificate and notary credentials; the top of `release.sh` has the one-time setup.
 
 ## Test
 
